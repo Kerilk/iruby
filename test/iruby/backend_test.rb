@@ -35,6 +35,7 @@ module IRubyTest
     def test_include_module
       assert_nothing_raised do
         @prybackend.eval("include Math, Comparable", false)
+        @prybackend.eval("sqrt(4.0)", false)
       end
     end
 
